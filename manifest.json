@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "Hack-O-Bot",
+  "description": "This extension is only for educational purposes",
+  "version": "1.0",
+   
+  "content_scripts": [
+    { "run_at" :"document_end",
+      "matches": ["https://www.facebook.com/*"],	  
+      "js": ["jquery-3.2.0.min.js","script.js"],
+	  "css":["css/mycss.css"]
+    }
+  ],
+  
+  "web_accessible_resources":["img/*.png"]
+}
